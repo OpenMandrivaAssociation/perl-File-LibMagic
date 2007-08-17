@@ -1,7 +1,7 @@
 %define module	File-LibMagic
 %define name	perl-%{module}
 %define version	0.82
-%define release	%mkrel 5
+%define release	%mkrel 6
 
 Name:		%{name}
 Version:	%{version}
