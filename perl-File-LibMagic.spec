@@ -12,6 +12,7 @@ Group:		Development/Perl
 Source:		http://search.cpan.org/CPAN/authors/id/F/FI/FITZNER/%{module}-%{version}.tar.bz2
 Patch0:         %name.ldflags.patch
 Url:		http://search.cpan.org/dist/%{module}
+BuildRoot:	%{_tmppath}/%{name}-buildroot/
 Buildrequires: perl-devel
 BuildRequires: libmagic-devel
 BuildRequires: db2-devel
