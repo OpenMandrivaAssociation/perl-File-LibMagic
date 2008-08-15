@@ -1,22 +1,21 @@
 %define module	File-LibMagic
 %define name	perl-%{module}
-%define version	0.82
-%define release	%mkrel 9
+%define version	0.89
+%define release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Summary:	Perlwrapper for libmagic
+Summary:	Perl wrapper for libmagic
 License:	GPL or Artistic
 Group:		Development/Perl
-Source:		http://search.cpan.org/CPAN/authors/id/F/FI/FITZNER/%{module}-%{version}.tar.bz2
-Patch0:         %name.ldflags.patch
-Url:		http://search.cpan.org/dist/%{module}
+Url:        http://search.cpan.org/dist/%{module}
+Source:     http://www.cpan.org/modules/by-module/File/%{module}-%{version}.tgz
 Buildrequires: perl-devel
 BuildRequires: libmagic-devel
 BuildRequires: db4-devel
 BuildRequires: gdbm-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 The File::LibMagic is a simple perlinterface to libmagic from the
@@ -24,25 +23,25 @@ file-4.x package
 
 %prep
 %setup -q -n %{module}-%{version}
-%patch0 -b .ldflags -p0
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-%make
+%make CFLAGS="%{optflags}"
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std
 
 %check
 make test
 
 %clean 
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files 
 %defattr(-,root,root)
 %doc README
-%{perl_vendorlib}/*
+%{perl_vendorarch}/File
+%{perl_vendorarch}/auto/File
 %{_mandir}/*/*
 
