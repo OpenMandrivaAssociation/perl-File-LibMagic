@@ -1,28 +1,28 @@
-%define module	File-LibMagic
-%define name	perl-%{module}
-%define version	0.91
-%define release	%mkrel 1
+%define upstream_name	 File-LibMagic
+%define upstream_version 0.96
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
+
 Summary:	Perl wrapper for libmagic
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:        http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/File/%{module}-%{version}.tgz
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/File/%{upstream_name}-%{upstream_version}.tgz
+
 Buildrequires: perl-devel
 BuildRequires: libmagic-devel
 BuildRequires: db4-devel
 BuildRequires: gdbm-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 The File::LibMagic is a simple perlinterface to libmagic from the
 file-4.x package
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
