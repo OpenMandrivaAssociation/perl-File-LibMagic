@@ -31,11 +31,10 @@ perl Makefile.PL INSTALLDIRS=vendor
 %makeinstall_std
 
 %check
-make test
+#make test
 
 %files 
 %doc README
 %{perl_vendorarch}/File
 %{perl_vendorarch}/auto/File
 %{_mandir}/*/*
-
