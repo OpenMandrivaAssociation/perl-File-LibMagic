@@ -13,8 +13,6 @@ Source0:	http://www.cpan.org/modules/by-module/File/%{module}-%{upstream_version
 
 Buildrequires:	perl-devel
 BuildRequires:	magic-devel
-BuildRequires:	db4-devel
-BuildRequires:	gdbm-devel
 
 %description
 The File::LibMagic is a simple perlinterface to libmagic from the
