@@ -1,15 +1,15 @@
 %define	module	File-LibMagic
-%define upstream_version 0.97
+%define upstream_version 0.98
 
 Name:		perl-%{module}
-Version:	%perl_convert_version 0.97
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 
 Summary:	Perl wrapper for libmagic
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{module}
-Source0:	http://www.cpan.org/modules/by-module/File/File-LibMagic-0.97.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/File/File-LibMagic-%{upstream_version}.tar.gz
 
 Buildrequires:	perl-devel
 BuildRequires:	magic-devel
@@ -106,5 +106,6 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Wed Jun 15 2005 Olivier Thauvin <nanardon@mandriva.org> 0.82-1mdk
 - First mandriva spec
+
 
 
