@@ -1,5 +1,6 @@
 removed_sources:
   File-LibMagic-0.96.tgz: 1624150be5e0994948556f63481f2779b3ffa024
   File-LibMagic-0.97.tar.gz: 97591239b32d0e6641789bb49eb1e32e5061751c
-sources:
   File-LibMagic-0.98.tar.gz: b9f1777fc5f50238e077ccabec10646947288b80
+sources:
+  File-LibMagic-1.00.tar.gz: 4283cec574a0260b575bcd69109e46ed8523565f

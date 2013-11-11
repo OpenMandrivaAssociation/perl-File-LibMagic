@@ -1,5 +1,5 @@
 %define	module	File-LibMagic
-%define upstream_version 0.98
+%define upstream_version 1.00
 
 Name:		perl-%{module}
 Version:	%perl_convert_version %{upstream_version}
@@ -106,6 +106,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Wed Jun 15 2005 Olivier Thauvin <nanardon@mandriva.org> 0.82-1mdk
 - First mandriva spec
+
 
 
 
