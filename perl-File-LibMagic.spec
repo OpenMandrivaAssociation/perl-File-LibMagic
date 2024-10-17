@@ -9,7 +9,7 @@ Summary:	Perl wrapper for libmagic
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{module}
+Url:		https://search.cpan.org/dist/%{module}
 Source0:	http://www.cpan.org/modules/by-module/File/File-LibMagic-%{upstream_version}.tar.gz
 
 Buildrequires:	perl-devel
