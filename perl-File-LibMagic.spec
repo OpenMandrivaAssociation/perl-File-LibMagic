@@ -12,6 +12,7 @@ Group:		Development/Perl
 Url:		https://search.cpan.org/dist/%{module}
 Source0:	http://www.cpan.org/modules/by-module/File/File-LibMagic-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 Buildrequires:	perl-devel
 BuildRequires:	magic-devel
 
