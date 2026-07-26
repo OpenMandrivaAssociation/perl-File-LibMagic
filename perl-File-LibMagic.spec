@@ -1,16 +1,14 @@
 %define	module	File-LibMagic
-%define upstream_version 1.23
-
 Name:		perl-%{module}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.23
+Release:	2
 
 Summary:	Perl wrapper for libmagic
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/houseabsolute/File-LibMagic
-Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/File-LibMagic-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/File-LibMagic-%{version}.tar.gz
 
 BuildRequires:	make
 Buildrequires:	perl-devel
@@ -21,7 +19,7 @@ The File::LibMagic is a simple perlinterface to libmagic from the
 file-4.x package
 
 %prep
-%setup -q -n %{module}-%{upstream_version}
+%setup -q -n %{module}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
