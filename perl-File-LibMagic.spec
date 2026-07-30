@@ -1,14 +1,15 @@
+%define upstream_version 1.23
 %define	module	File-LibMagic
 Name:		perl-%{module}
 Version:	1.23
-Release:	2
+Release:	1
 
 Summary:	Perl wrapper for libmagic
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/houseabsolute/File-LibMagic
-Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/File-LibMagic-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/File-LibMagic-1.23.tar.gz
 
 BuildRequires:	make
 Buildrequires:	perl-devel
