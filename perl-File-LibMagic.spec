@@ -2,7 +2,7 @@
 %define	module	File-LibMagic
 Name:		perl-%{module}
 Version:	1.23
-Release:	4
+Release:	5
 
 Summary:	Perl wrapper for libmagic
 
@@ -32,7 +32,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %check
 # soft: do not fail package on test failures
 set +e
-#make test
+#make test || :
 
 %files 
 %doc README
