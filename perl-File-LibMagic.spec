@@ -2,7 +2,7 @@
 %define	module	File-LibMagic
 Name:		perl-%{module}
 Version:	1.23
-Release:	15
+Release:	16
 
 Summary:	Perl wrapper for libmagic
 
