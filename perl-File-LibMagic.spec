@@ -2,7 +2,7 @@
 %define module File-LibMagic
 Name:		perl-%{module}
 Version:	1.23
-Release:	6
+Release:	7
 
 Summary:	Perl wrapper for libmagic
 
@@ -12,6 +12,7 @@ Url:		https://github.com/houseabsolute/File-LibMagic
 Source0:	https://cpan.metacpan.org/authors/id/D/DR/DROLSKY/File-LibMagic-1.23.tar.gz
 
 BuildRequires:	make
+BuildRequires:	perl(ExtUtils::CBuilder)
 BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	pkgconfig(libmagic)
 BuildRequires:	perl(Config::AutoConf)
