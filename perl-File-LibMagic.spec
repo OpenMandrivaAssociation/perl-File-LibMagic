@@ -1,8 +1,8 @@
 %define upstream_version 1.23
-%define	module	File-LibMagic
+%define module File-LibMagic
 Name:		perl-%{module}
 Version:	1.23
-Release:	5
+Release:	6
 
 Summary:	Perl wrapper for libmagic
 
